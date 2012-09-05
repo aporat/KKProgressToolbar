@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530C49D715F70E62004D66B6 /* KKProgressToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 530C49D515F70E62004D66B6 /* KKProgressToolbar.m */; };
+		53C05CC315F70B7100D12E27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC215F70B7100D12E27 /* UIKit.framework */; };
+		53C05CC515F70B7100D12E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC415F70B7100D12E27 /* Foundation.framework */; };
+		53C05CC715F70B7100D12E27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC615F70B7100D12E27 /* CoreGraphics.framework */; };
+		53C05CCD15F70B7100D12E27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CCB15F70B7100D12E27 /* InfoPlist.strings */; };
+		53C05CCF15F70B7100D12E27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CCE15F70B7100D12E27 /* main.m */; };
+		53C05CD315F70B7100D12E27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD215F70B7100D12E27 /* AppDelegate.m */; };
+		53C05CD615F70B7100D12E27 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD515F70B7100D12E27 /* MainViewController.m */; };
+		53C05CD915F70B7100D12E27 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD815F70B7100D12E27 /* FlipsideViewController.m */; };
+		53C05CDC15F70B7100D12E27 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CDA15F70B7100D12E27 /* MainViewController_iPhone.xib */; };
+		53C05CDF15F70B7100D12E27 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CDD15F70B7100D12E27 /* MainViewController_iPad.xib */; };
+		53C05CE215F70B7100D12E27 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		530C49D515F70E62004D66B6 /* KKProgressToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKProgressToolbar.m; path = ../src/KKProgressToolbar.m; sourceTree = "<group>"; };
+		530C49D615F70E62004D66B6 /* KKProgressToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKProgressToolbar.h; path = ../src/KKProgressToolbar.h; sourceTree = "<group>"; };
+		53C05CBE15F70B7100D12E27 /* KKProgressToolbarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKProgressToolbarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C05CC215F70B7100D12E27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53C05CC415F70B7100D12E27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53C05CC615F70B7100D12E27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53C05CCA15F70B7100D12E27 /* KKProgressToolbarDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KKProgressToolbarDemo-Info.plist"; sourceTree = "<group>"; };
+		53C05CCC15F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53C05CCE15F70B7100D12E27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53C05CD015F70B7100D12E27 /* KKProgressToolbarDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKProgressToolbarDemo-Prefix.pch"; sourceTree = "<group>"; };
+		53C05CD115F70B7100D12E27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C05CD215F70B7100D12E27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53C05CD415F70B7100D12E27 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		53C05CD515F70B7100D12E27 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		53C05CD715F70B7100D12E27 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		53C05CD815F70B7100D12E27 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		53C05CDB15F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		53C05CDE15F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
+		53C05CE115F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53C05CBB15F70B7100D12E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C05CC315F70B7100D12E27 /* UIKit.framework in Frameworks */,
+				53C05CC515F70B7100D12E27 /* Foundation.framework in Frameworks */,
+				53C05CC715F70B7100D12E27 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53C05CB315F70B7100D12E27 = {
+			isa = PBXGroup;
+			children = (
+				53C05CE815F70B8600D12E27 /* KKProgressToolbar */,
+				53C05CC815F70B7100D12E27 /* KKProgressToolbarDemo */,
+				53C05CC115F70B7100D12E27 /* Frameworks */,
+				53C05CBF15F70B7100D12E27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53C05CBF15F70B7100D12E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53C05CBE15F70B7100D12E27 /* KKProgressToolbarDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53C05CC115F70B7100D12E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C05CC215F70B7100D12E27 /* UIKit.framework */,
+				53C05CC415F70B7100D12E27 /* Foundation.framework */,
+				53C05CC615F70B7100D12E27 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C05CC815F70B7100D12E27 /* KKProgressToolbarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				53C05CD115F70B7100D12E27 /* AppDelegate.h */,
+				53C05CD215F70B7100D12E27 /* AppDelegate.m */,
+				53C05CD415F70B7100D12E27 /* MainViewController.h */,
+				53C05CD515F70B7100D12E27 /* MainViewController.m */,
+				53C05CD715F70B7100D12E27 /* FlipsideViewController.h */,
+				53C05CD815F70B7100D12E27 /* FlipsideViewController.m */,
+				53C05CDA15F70B7100D12E27 /* MainViewController_iPhone.xib */,
+				53C05CDD15F70B7100D12E27 /* MainViewController_iPad.xib */,
+				53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */,
+				53C05CC915F70B7100D12E27 /* Supporting Files */,
+			);
+			path = KKProgressToolbarDemo;
+			sourceTree = "<group>";
+		};
+		53C05CC915F70B7100D12E27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C05CCA15F70B7100D12E27 /* KKProgressToolbarDemo-Info.plist */,
+				53C05CCB15F70B7100D12E27 /* InfoPlist.strings */,
+				53C05CCE15F70B7100D12E27 /* main.m */,
+				53C05CD015F70B7100D12E27 /* KKProgressToolbarDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53C05CE815F70B8600D12E27 /* KKProgressToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				530C49D515F70E62004D66B6 /* KKProgressToolbar.m */,
+				530C49D615F70E62004D66B6 /* KKProgressToolbar.h */,
+			);
+			name = KKProgressToolbar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53C05CBD15F70B7100D12E27 /* KKProgressToolbarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C05CE515F70B7100D12E27 /* Build configuration list for PBXNativeTarget "KKProgressToolbarDemo" */;
+			buildPhases = (
+				53C05CBA15F70B7100D12E27 /* Sources */,
+				53C05CBB15F70B7100D12E27 /* Frameworks */,
+				53C05CBC15F70B7100D12E27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKProgressToolbarDemo;
+			productName = KKProgressToolbarDemo;
+			productReference = 53C05CBE15F70B7100D12E27 /* KKProgressToolbarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53C05CB515F70B7100D12E27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Kosher Penguin LLC";
+			};
+			buildConfigurationList = 53C05CB815F70B7100D12E27 /* Build configuration list for PBXProject "KKProgressToolbarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53C05CB315F70B7100D12E27;
+			productRefGroup = 53C05CBF15F70B7100D12E27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53C05CBD15F70B7100D12E27 /* KKProgressToolbarDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C05CBC15F70B7100D12E27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C05CCD15F70B7100D12E27 /* InfoPlist.strings in Resources */,
+				53C05CDC15F70B7100D12E27 /* MainViewController_iPhone.xib in Resources */,
+				53C05CDF15F70B7100D12E27 /* MainViewController_iPad.xib in Resources */,
+				53C05CE215F70B7100D12E27 /* FlipsideViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53C05CBA15F70B7100D12E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C05CCF15F70B7100D12E27 /* main.m in Sources */,
+				53C05CD315F70B7100D12E27 /* AppDelegate.m in Sources */,
+				53C05CD615F70B7100D12E27 /* MainViewController.m in Sources */,
+				53C05CD915F70B7100D12E27 /* FlipsideViewController.m in Sources */,
+				530C49D715F70E62004D66B6 /* KKProgressToolbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53C05CCB15F70B7100D12E27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C05CCC15F70B7100D12E27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53C05CDA15F70B7100D12E27 /* MainViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C05CDB15F70B7100D12E27 /* en */,
+			);
+			name = MainViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		53C05CDD15F70B7100D12E27 /* MainViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C05CDE15F70B7100D12E27 /* en */,
+			);
+			name = MainViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C05CE115F70B7100D12E27 /* en */,
+			);
+			name = FlipsideViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53C05CE315F70B7100D12E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53C05CE415F70B7100D12E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53C05CE615F70B7100D12E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KKProgressToolbarDemo/KKProgressToolbarDemo-Prefix.pch";
+				INFOPLIST_FILE = "KKProgressToolbarDemo/KKProgressToolbarDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53C05CE715F70B7100D12E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KKProgressToolbarDemo/KKProgressToolbarDemo-Prefix.pch";
+				INFOPLIST_FILE = "KKProgressToolbarDemo/KKProgressToolbarDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53C05CB815F70B7100D12E27 /* Build configuration list for PBXProject "KKProgressToolbarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C05CE315F70B7100D12E27 /* Debug */,
+				53C05CE415F70B7100D12E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C05CE515F70B7100D12E27 /* Build configuration list for PBXNativeTarget "KKProgressToolbarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C05CE615F70B7100D12E27 /* Debug */,
+				53C05CE715F70B7100D12E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53C05CB515F70B7100D12E27 /* Project object */;
+}
