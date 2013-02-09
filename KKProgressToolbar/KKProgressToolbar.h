@@ -1,12 +1,11 @@
 //
-// Copyright 2011-2012 Kosher Penguin LLC
-// Created by Adar Porat (https://github.com/aporat) on 1/16/2012.
+// Copyright 2011-2012 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//		http://www.apache.org/licenses/LICENSE-2.0
+//    http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,6 +15,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+typedef void(^KKProgressToolbarCompletionHandler)(BOOL success);
 
 @class KKProgressToolbar;
 
@@ -33,8 +34,7 @@
 @interface KKProgressToolbar : UIToolbar {
     @private
     
-    // delegate which notified then the passcode is turned on/off
-	id <KKProgressToolbarDelegate> __unsafe_unretained _actionDelegate;
+	id <KKProgressToolbarDelegate> __weak _actionDelegate;
     
     UIBarButtonItem* _stopButtonItem;
 	UIActivityIndicatorView* _activityIndicator;
@@ -47,6 +47,9 @@
 @property (nonatomic, strong) UILabel *statusLabel;
 @property (nonatomic, strong) UIProgressView *progressBar;
 
-@property (nonatomic, unsafe_unretained) id <KKProgressToolbarDelegate> actionDelegate;
+@property (nonatomic, weak) id <KKProgressToolbarDelegate> actionDelegate;
+
+- (void)show:(BOOL)animated completion:(void (^)(BOOL finished))completion;
+- (void)hide:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 
 @end

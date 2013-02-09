@@ -15,15 +15,13 @@
 // limitations under the License.
 //
 
-#import "FlipsideViewController.h"
 #import "KKProgressToolbar.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, KKProgressToolbarDelegate>
+@interface MainViewController : UIViewController <KKProgressToolbarDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 @property (strong, nonatomic) KKProgressToolbar *statusToolbar;
 
-- (IBAction)showInfo:(id)sender;
 - (IBAction)startUILoading;
 - (IBAction)stopUILoading;
 

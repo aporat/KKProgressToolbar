@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530C49D715F70E62004D66B6 /* KKProgressToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 530C49D515F70E62004D66B6 /* KKProgressToolbar.m */; };
+		531D477016C6C3E6008DC7BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 531D476F16C6C3E6008DC7BF /* Default-568h@2x.png */; };
+		531D477316C6C691008DC7BF /* KKProgressToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 531D477116C6C691008DC7BF /* KKProgressToolbar.m */; };
 		53C05CC315F70B7100D12E27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC215F70B7100D12E27 /* UIKit.framework */; };
 		53C05CC515F70B7100D12E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC415F70B7100D12E27 /* Foundation.framework */; };
 		53C05CC715F70B7100D12E27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C05CC615F70B7100D12E27 /* CoreGraphics.framework */; };
@@ -15,15 +16,14 @@
 		53C05CCF15F70B7100D12E27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CCE15F70B7100D12E27 /* main.m */; };
 		53C05CD315F70B7100D12E27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD215F70B7100D12E27 /* AppDelegate.m */; };
 		53C05CD615F70B7100D12E27 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD515F70B7100D12E27 /* MainViewController.m */; };
-		53C05CD915F70B7100D12E27 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C05CD815F70B7100D12E27 /* FlipsideViewController.m */; };
 		53C05CDC15F70B7100D12E27 /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CDA15F70B7100D12E27 /* MainViewController_iPhone.xib */; };
 		53C05CDF15F70B7100D12E27 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CDD15F70B7100D12E27 /* MainViewController_iPad.xib */; };
-		53C05CE215F70B7100D12E27 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		530C49D515F70E62004D66B6 /* KKProgressToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKProgressToolbar.m; path = ../src/KKProgressToolbar.m; sourceTree = "<group>"; };
-		530C49D615F70E62004D66B6 /* KKProgressToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKProgressToolbar.h; path = ../src/KKProgressToolbar.h; sourceTree = "<group>"; };
+		531D476F16C6C3E6008DC7BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		531D477116C6C691008DC7BF /* KKProgressToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKProgressToolbar.m; path = ../KKProgressToolbar/KKProgressToolbar.m; sourceTree = "<group>"; };
+		531D477216C6C691008DC7BF /* KKProgressToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKProgressToolbar.h; path = ../KKProgressToolbar/KKProgressToolbar.h; sourceTree = "<group>"; };
 		53C05CBE15F70B7100D12E27 /* KKProgressToolbarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKProgressToolbarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C05CC215F70B7100D12E27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53C05CC415F70B7100D12E27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,11 +36,8 @@
 		53C05CD215F70B7100D12E27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53C05CD415F70B7100D12E27 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		53C05CD515F70B7100D12E27 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		53C05CD715F70B7100D12E27 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		53C05CD815F70B7100D12E27 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		53C05CDB15F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
 		53C05CDE15F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
-		53C05CE115F70B7100D12E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +89,8 @@
 				53C05CD215F70B7100D12E27 /* AppDelegate.m */,
 				53C05CD415F70B7100D12E27 /* MainViewController.h */,
 				53C05CD515F70B7100D12E27 /* MainViewController.m */,
-				53C05CD715F70B7100D12E27 /* FlipsideViewController.h */,
-				53C05CD815F70B7100D12E27 /* FlipsideViewController.m */,
 				53C05CDA15F70B7100D12E27 /* MainViewController_iPhone.xib */,
 				53C05CDD15F70B7100D12E27 /* MainViewController_iPad.xib */,
-				53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */,
 				53C05CC915F70B7100D12E27 /* Supporting Files */,
 			);
 			path = KKProgressToolbarDemo;
@@ -105,6 +99,7 @@
 		53C05CC915F70B7100D12E27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				531D476F16C6C3E6008DC7BF /* Default-568h@2x.png */,
 				53C05CCA15F70B7100D12E27 /* KKProgressToolbarDemo-Info.plist */,
 				53C05CCB15F70B7100D12E27 /* InfoPlist.strings */,
 				53C05CCE15F70B7100D12E27 /* main.m */,
@@ -116,8 +111,8 @@
 		53C05CE815F70B8600D12E27 /* KKProgressToolbar */ = {
 			isa = PBXGroup;
 			children = (
-				530C49D515F70E62004D66B6 /* KKProgressToolbar.m */,
-				530C49D615F70E62004D66B6 /* KKProgressToolbar.h */,
+				531D477116C6C691008DC7BF /* KKProgressToolbar.m */,
+				531D477216C6C691008DC7BF /* KKProgressToolbar.h */,
 			);
 			name = KKProgressToolbar;
 			sourceTree = "<group>";
@@ -176,7 +171,7 @@
 				53C05CCD15F70B7100D12E27 /* InfoPlist.strings in Resources */,
 				53C05CDC15F70B7100D12E27 /* MainViewController_iPhone.xib in Resources */,
 				53C05CDF15F70B7100D12E27 /* MainViewController_iPad.xib in Resources */,
-				53C05CE215F70B7100D12E27 /* FlipsideViewController.xib in Resources */,
+				531D477016C6C3E6008DC7BF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +185,7 @@
 				53C05CCF15F70B7100D12E27 /* main.m in Sources */,
 				53C05CD315F70B7100D12E27 /* AppDelegate.m in Sources */,
 				53C05CD615F70B7100D12E27 /* MainViewController.m in Sources */,
-				53C05CD915F70B7100D12E27 /* FlipsideViewController.m in Sources */,
-				530C49D715F70E62004D66B6 /* KKProgressToolbar.m in Sources */,
+				531D477316C6C691008DC7BF /* KKProgressToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +214,6 @@
 				53C05CDE15F70B7100D12E27 /* en */,
 			);
 			name = MainViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		53C05CE015F70B7100D12E27 /* FlipsideViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53C05CE115F70B7100D12E27 /* en */,
-			);
-			name = FlipsideViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

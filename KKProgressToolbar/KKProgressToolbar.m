@@ -1,12 +1,11 @@
 //
-// Copyright 2011-2012 Kosher Penguin LLC
-// Created by Adar Porat (https://github.com/aporat) on 1/16/2012.
+// Copyright 2011-2012 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//		http://www.apache.org/licenses/LICENSE-2.0
+//    http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,6 +15,13 @@
 //
 
 #import "KKProgressToolbar.h"
+
+@interface KKProgressToolbar ()
+
+@property(nonatomic, copy) KKProgressToolbarCompletionHandler showHandler;
+@property(nonatomic, copy) KKProgressToolbarCompletionHandler hideHandler;
+
+@end
 
 @implementation KKProgressToolbar
 
@@ -51,6 +57,36 @@
         
     }
     return self;
+}
+
+- (void)show:(BOOL)animated completion:(void (^)(BOOL finished))completion {
+    self.showHandler = completion;
+    
+    self.stopButtonItem.enabled = YES;
+    [self.activityIndicator startAnimating];
+
+    [UIView animateWithDuration:0.4 animations:^{
+        self.frame = CGRectMake(0, self.superview.bounds.size.height - 44, self.superview.bounds.size.width, 44);
+    } completion:^(BOOL finished) {
+        self.showHandler(YES);
+        self.showHandler = nil;
+    }];
+    
+}
+
+- (void)hide:(BOOL)animated completion:(void (^)(BOOL finished))completion {
+    self.showHandler = completion;
+    
+    self.stopButtonItem.enabled = NO;
+    [self.activityIndicator stopAnimating];
+    
+    [UIView animateWithDuration:0.4 delay:1.0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+        self.frame = CGRectMake(0, self.superview.bounds.size.height, self.superview.bounds.size.width, 44);
+    } completion:^(BOOL finished) {
+        self.showHandler(YES);
+        self.showHandler = nil;
+    }];
+    
 }
 
 - (void)didCancelButtonPressed:(id*)sender {
