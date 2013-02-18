@@ -68,14 +68,16 @@
     [UIView animateWithDuration:0.4 animations:^{
         self.frame = CGRectMake(0, self.superview.bounds.size.height - 44, self.superview.bounds.size.width, 44);
     } completion:^(BOOL finished) {
-        self.showHandler(YES);
+        if (self.showHandler!=nil) {
+            self.showHandler(YES);
+        }
         self.showHandler = nil;
     }];
     
 }
 
 - (void)hide:(BOOL)animated completion:(void (^)(BOOL finished))completion {
-    self.showHandler = completion;
+    self.hideHandler = completion;
     
     self.stopButtonItem.enabled = NO;
     [self.activityIndicator stopAnimating];
@@ -83,8 +85,10 @@
     [UIView animateWithDuration:0.4 delay:1.0 options:UIViewAnimationOptionLayoutSubviews animations:^{
         self.frame = CGRectMake(0, self.superview.bounds.size.height, self.superview.bounds.size.width, 44);
     } completion:^(BOOL finished) {
-        self.showHandler(YES);
-        self.showHandler = nil;
+        if (self.hideHandler!=nil) {
+            self.hideHandler(YES);
+        }
+        self.hideHandler = nil;
     }];
     
 }
