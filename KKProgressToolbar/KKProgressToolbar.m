@@ -53,7 +53,7 @@
         self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
         self.translucent = YES;
         self.barStyle = UIBarStyleBlackTranslucent;
-        self.items = [NSArray arrayWithObjects:activityIndicatorItem, flexSpace, statusItem, flexSpace, self.stopButtonItem, nil];
+        self.items = @[activityIndicatorItem, flexSpace, statusItem, flexSpace, self.stopButtonItem];
         
     }
     return self;
