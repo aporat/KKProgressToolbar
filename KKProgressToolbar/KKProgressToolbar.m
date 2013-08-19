@@ -50,6 +50,10 @@
         UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         self.stopButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(didCancelButtonPressed:)];
         
+        [self setBackgroundImage:nil
+              forToolbarPosition:UIToolbarPositionAny
+                      barMetrics:UIBarMetricsDefault];
+        
         self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
         self.translucent = YES;
         self.barStyle = UIBarStyleBlackTranslucent;
