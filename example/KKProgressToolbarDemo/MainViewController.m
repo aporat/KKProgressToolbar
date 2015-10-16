@@ -45,7 +45,7 @@
 
 - (IBAction)startUILoading  {
     
-    self.statusToolbar.statusLabel.text = @"Loading from server...";
+    self.statusToolbar.titleLabel.text = @"Loading from server...";
     [self.statusToolbar show:YES completion:^(BOOL finished) {
         
     }];

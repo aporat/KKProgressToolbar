@@ -16,7 +16,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^KKProgressToolbarCompletionHandler)(BOOL success);
+typedef void(^KKProgressToolbarCompletionHandler)(BOOL finished);
 
 @class KKProgressToolbar;
 
@@ -27,24 +27,24 @@ typedef void(^KKProgressToolbarCompletionHandler)(BOOL success);
 /**
  * called when the user cancels the action
  */
-- (void)didCancelButtonPressed:(KKProgressToolbar*)toolbar;
+- (void)didCancelButtonPressed:(KKProgressToolbar *)toolbar;
 
 @end
 
 @interface KKProgressToolbar : UIToolbar {
-    @private
-    
-	id <KKProgressToolbarDelegate> __weak _actionDelegate;
-    
-    UIBarButtonItem* _stopButtonItem;
-	UIActivityIndicatorView* _activityIndicator;
-	UILabel* _statusLabel;
-	UIProgressView* _progressBar;
+@private
+  
+  id <KKProgressToolbarDelegate> __weak _actionDelegate;
+  
+  UIBarButtonItem *_stopButtonItem;
+  UIActivityIndicatorView *_activityIndicator;
+  UILabel *_statusLabel;
+  UIProgressView *_progressBar;
 }
 
 @property (nonatomic, strong) UIBarButtonItem *stopButtonItem;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, strong) UILabel *statusLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIProgressView *progressBar;
 
 @property (nonatomic, weak) id <KKProgressToolbarDelegate> actionDelegate;
