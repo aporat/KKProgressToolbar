@@ -37,7 +37,7 @@
     self.titleLabel.textColor = [UIColor whiteColor];
     self.titleLabel.shadowColor = [UIColor blackColor];
     self.titleLabel.shadowOffset = CGSizeMake(0, 0);
-    self.titleLabel.textAlignment = UITextAlignmentCenter;
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
     
     self.progressBar = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 25, 200, 10)];
     

@@ -27,7 +27,7 @@ typedef void(^KKProgressToolbarCompletionHandler)(BOOL finished);
 /**
  * called when the user cancels the action
  */
-- (void)didCancelButtonPressed:(KKProgressToolbar *)toolbar;
+- (void)didCancelButtonPressed:(KKProgressToolbar * _Nonnull)toolbar;
 
 @end
 
@@ -42,14 +42,14 @@ typedef void(^KKProgressToolbarCompletionHandler)(BOOL finished);
   UIProgressView *_progressBar;
 }
 
-@property (nonatomic, strong) UIBarButtonItem *stopButtonItem;
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UIProgressView *progressBar;
+@property (nonatomic, strong, nullable) UIBarButtonItem *stopButtonItem;
+@property (nonatomic, strong, nullable) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong, nullable) UILabel *titleLabel;
+@property (nonatomic, strong, nullable) UIProgressView *progressBar;
 
-@property (nonatomic, weak) id <KKProgressToolbarDelegate> actionDelegate;
+@property (nonatomic, weak, nullable) id <KKProgressToolbarDelegate> actionDelegate;
 
-- (void)show:(BOOL)animated completion:(void (^)(BOOL finished))completion;
-- (void)hide:(BOOL)animated completion:(void (^)(BOOL finished))completion;
+- (void)show:(BOOL)animated completion:(void (^ _Nullable)(BOOL finished))completion;
+- (void)hide:(BOOL)animated completion:(void (^ _Nullable)(BOOL finished))completion;
 
 @end
