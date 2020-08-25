@@ -5,4 +5,4 @@ podfile: Podfile
 
 script:
 - set -o pipefail
-- xcodebuild -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO | xcpretty
+- xcodebuild -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar -destination 'name=iPhone 8' build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO | xcpretty
