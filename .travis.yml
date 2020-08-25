@@ -1,15 +1,8 @@
 language: objective-c
 osx_image: xcode11.2
 cache: cocoapods
-podfile: Example/Podfile
-
-
-# travis cache isn't kept between builds
-before_install:
-  - rvm use system
-  - pod repo update
+podfile: Podfile
 
 script:
 - set -o pipefail
-- pod install
 - xcodebuild -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO | xcpretty
