@@ -7,7 +7,6 @@ podfile: Example/Podfile
 # travis cache isn't kept between builds
 before_install:
   - rvm use system
-  - sudo gem install cocoapods
   - pod repo update
 
 script:
