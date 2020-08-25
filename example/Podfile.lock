@@ -1,0 +1,27 @@
+PODS:
+  - GTProgressBar (0.3.3)
+  - KKProgressToolbar (3.0.0):
+    - GTProgressBar
+    - SnapKit
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - KKProgressToolbar (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GTProgressBar
+    - SnapKit
+
+EXTERNAL SOURCES:
+  KKProgressToolbar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GTProgressBar: a480283ecb0ada50de16c71e634892826928f640
+  KKProgressToolbar: e842fbb271b01c257bde231e8c6da7842ece053b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 08e9eb173d265ebd3c18f9a57c4eabb15ead62db
+
+COCOAPODS: 1.10.0.beta.2

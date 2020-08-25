@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537EDCD924F49E34003DC54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537EDCD824F49E34003DC54A /* AppDelegate.swift */; };
+		537EDCDD24F49E34003DC54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537EDCDC24F49E34003DC54A /* ViewController.swift */; };
+		537EDCE024F49E34003DC54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537EDCDE24F49E34003DC54A /* Main.storyboard */; };
+		537EDCE224F49E36003DC54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537EDCE124F49E36003DC54A /* Assets.xcassets */; };
+		537EDCE524F49E36003DC54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537EDCE324F49E36003DC54A /* LaunchScreen.storyboard */; };
+		67647A232581858C2581E00C /* Pods_KKProgressToolbarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80D71B8797AF62F5CF9BC85 /* Pods_KKProgressToolbarExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		537EDCD524F49E34003DC54A /* KKProgressToolbarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKProgressToolbarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537EDCD824F49E34003DC54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		537EDCDC24F49E34003DC54A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		537EDCDF24F49E34003DC54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		537EDCE124F49E36003DC54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		537EDCE424F49E36003DC54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		537EDCE624F49E36003DC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF78346BF93501F3D531729C /* Pods-KKProgressToolbarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbarExample.debug.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbarExample/Pods-KKProgressToolbarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B53D4DE493E43F9C2072567E /* Pods-KKProgressToolbarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbarExample.release.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbarExample/Pods-KKProgressToolbarExample.release.xcconfig"; sourceTree = "<group>"; };
+		C80D71B8797AF62F5CF9BC85 /* Pods_KKProgressToolbarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKProgressToolbarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537EDCD224F49E34003DC54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67647A232581858C2581E00C /* Pods_KKProgressToolbarExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		537EDCCC24F49E34003DC54A = {
+			isa = PBXGroup;
+			children = (
+				537EDCD724F49E34003DC54A /* KKProgressToolbarExample */,
+				537EDCD624F49E34003DC54A /* Products */,
+				8F7C8BDD52D19FB999E377C1 /* Pods */,
+				7E7FEE06F1D309B77E44050F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		537EDCD624F49E34003DC54A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				537EDCD524F49E34003DC54A /* KKProgressToolbarExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		537EDCD724F49E34003DC54A /* KKProgressToolbarExample */ = {
+			isa = PBXGroup;
+			children = (
+				537EDCD824F49E34003DC54A /* AppDelegate.swift */,
+				537EDCDC24F49E34003DC54A /* ViewController.swift */,
+				537EDCDE24F49E34003DC54A /* Main.storyboard */,
+				537EDCE124F49E36003DC54A /* Assets.xcassets */,
+				537EDCE324F49E36003DC54A /* LaunchScreen.storyboard */,
+				537EDCE624F49E36003DC54A /* Info.plist */,
+			);
+			path = KKProgressToolbarExample;
+			sourceTree = "<group>";
+		};
+		7E7FEE06F1D309B77E44050F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C80D71B8797AF62F5CF9BC85 /* Pods_KKProgressToolbarExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F7C8BDD52D19FB999E377C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF78346BF93501F3D531729C /* Pods-KKProgressToolbarExample.debug.xcconfig */,
+				B53D4DE493E43F9C2072567E /* Pods-KKProgressToolbarExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		537EDCD424F49E34003DC54A /* KKProgressToolbarExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537EDCF424F49E36003DC54A /* Build configuration list for PBXNativeTarget "KKProgressToolbarExample" */;
+			buildPhases = (
+				677C5C3937372EC9E2F2E688 /* [CP] Check Pods Manifest.lock */,
+				537EDCD124F49E34003DC54A /* Sources */,
+				537EDCD224F49E34003DC54A /* Frameworks */,
+				537EDCD324F49E34003DC54A /* Resources */,
+				AD69865545F0C22015F61BBE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKProgressToolbarExample;
+			productName = ProgressToolbar;
+			productReference = 537EDCD524F49E34003DC54A /* KKProgressToolbarExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		537EDCCD24F49E34003DC54A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Adar Porat";
+				TargetAttributes = {
+					537EDCD424F49E34003DC54A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 537EDCD024F49E34003DC54A /* Build configuration list for PBXProject "KKProgressToolbarExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 537EDCCC24F49E34003DC54A;
+			productRefGroup = 537EDCD624F49E34003DC54A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				537EDCD424F49E34003DC54A /* KKProgressToolbarExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		537EDCD324F49E34003DC54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537EDCE524F49E36003DC54A /* LaunchScreen.storyboard in Resources */,
+				537EDCE224F49E36003DC54A /* Assets.xcassets in Resources */,
+				537EDCE024F49E34003DC54A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		677C5C3937372EC9E2F2E688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKProgressToolbarExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD69865545F0C22015F61BBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarExample/Pods-KKProgressToolbarExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarExample/Pods-KKProgressToolbarExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarExample/Pods-KKProgressToolbarExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		537EDCD124F49E34003DC54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537EDCDD24F49E34003DC54A /* ViewController.swift in Sources */,
+				537EDCD924F49E34003DC54A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		537EDCDE24F49E34003DC54A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537EDCDF24F49E34003DC54A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		537EDCE324F49E36003DC54A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537EDCE424F49E36003DC54A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		537EDCF224F49E36003DC54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		537EDCF324F49E36003DC54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537EDCF524F49E36003DC54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF78346BF93501F3D531729C /* Pods-KKProgressToolbarExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KKProgressToolbarExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KK.ProgressToolbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		537EDCF624F49E36003DC54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53D4DE493E43F9C2072567E /* Pods-KKProgressToolbarExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KKProgressToolbarExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KK.ProgressToolbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		537EDCD024F49E34003DC54A /* Build configuration list for PBXProject "KKProgressToolbarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537EDCF224F49E36003DC54A /* Debug */,
+				537EDCF324F49E36003DC54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537EDCF424F49E36003DC54A /* Build configuration list for PBXNativeTarget "KKProgressToolbarExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537EDCF524F49E36003DC54A /* Debug */,
+				537EDCF624F49E36003DC54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 537EDCCD24F49E34003DC54A /* Project object */;
+}
