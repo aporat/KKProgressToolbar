@@ -7,13 +7,6 @@ KKProgressToolbar is an iOS toolbar library
 ![](https://github.com/aporat/KKProgressToolbar/raw/master/screenshots/ipad-1.png) 
 
 
-## Requirements
-* Xcode 4.5 or higher
-* Apple LLVM compiler
-* iOS 5.0 or higher
-* ARC
-
-
 ## Demo
 
 build and run the `KKProgressToolbarExample` project in Xcode to see `KKProgressToolbar` in action.
@@ -33,8 +26,9 @@ Edit your Podfile and add `KKProgressToolbar`:
 
 ``` bash
 $ edit Podfile
-platform :ios, '5.0'
-pod 'KKProgressToolbar', :head
+platform :ios, '12.0'
+
+pod 'KKProgressToolbar'
 ```
 
 Install into your Xcode project:
@@ -43,7 +37,7 @@ Install into your Xcode project:
 $ pod install
 ```
 
-Add `#include "KKProgressToolbar.h"` to the top of classes that will use it.
+Add `import KKProgressToolbar"` to the top of classes that will use it.
 
 
 ## Example Usage
@@ -51,36 +45,45 @@ Add `#include "KKProgressToolbar.h"` to the top of classes that will use it.
 ### Showing and Hiding the toolbar
 
 
-``` objective-c
+``` swift
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-	CGRect statusToolbarFrame = CGRectMake(0, self.view.bounds.size.height, self.view.bounds.size.width, 44);
-	self.statusToolbar = [[KKProgressToolbar alloc] initWithFrame:statusToolbarFrame];
-	self.statusToolbar.actionDelegate = self;
-	[self.view addSubview:self.statusToolbar];
+class ViewController: UIViewController {
     
-}
-
-- (void)didCancelButtonPressed:(KKProgressToolbar *)toolbar {
-    [self stopUILoading];
-}
-
-
-- (IBAction)startUILoading  {
+    lazy fileprivate var loadingToolbar: KKProgressToolbar = {
+        let view = KKProgressToolbar()
+        view.progressBar.barBorderColor = .black
+        view.progressBar.barBackgroundColor = .black
+        view.progressBar.barBorderWidth = 1
+        view.progressBar.barFillColor = .white
+        view.isHidden = true
+        return view
+    }()
     
-    self.statusToolbar.statusLabel.text = @"Loading from server...";
-    [self.statusToolbar show:YES completion:^(BOOL finished) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-    }];
+        loadingToolbar.actionDelegate = self
+        loadingToolbar.frame = CGRect(x: 0, y: view.bounds.size.height, width: view.bounds.size.width, height: 55)
+        view.addSubview(loadingToolbar)
+        
+    }
     
+    @IBAction func showToolbar(_ sender: Any) {
+        loadingToolbar.show(true, completion: nil)
+        loadingToolbar.text = NSLocalizedString("Loading...", comment: "")
+        loadingToolbar.progressBar.progress = 0.5
+    }
+    
+    @IBAction func hideToolbar(_ sender: Any) {
+        loadingToolbar.hide(true, completion: nil)
+    }
 }
 
-
-- (IBAction)stopUILoading {
-    [self.statusToolbar hide:YES completion:^(BOOL finished) {
+// MARK: - KKProgressToolbarDelegate
+extension ViewController: KKProgressToolbarDelegate {
+    func didCancelButtonPressed(_ toolbar: KKProgressToolbar) {
         
-    }];
+    }
+}
+
 ```
