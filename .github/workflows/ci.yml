@@ -17,4 +17,3 @@ jobs:
       run: pod install
     - name: Run iOS tests
       run: xcodebuild test  -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar -destination platform="iOS Simulator,name=iPhone 11 Pro"
-    - uses: actions/upload-artifact@v2
