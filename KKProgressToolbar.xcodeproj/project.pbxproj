@@ -11,6 +11,7 @@
 		535D10B224F4A21400E3006D /* KKProgressToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535D10AF24F4A21400E3006D /* KKProgressToolbar.swift */; };
 		537EDD0E24F49F1E003DC54A /* KKProgressToolbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537EDD0424F49F1E003DC54A /* KKProgressToolbar.framework */; };
 		537EDD1324F49F1E003DC54A /* ProgressToolbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537EDD1224F49F1E003DC54A /* ProgressToolbarTests.swift */; };
+		70333108EEBF2A9CAC44F870 /* Pods_KKProgressToolbarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AD6D90EE707F5C317D4AFD /* Pods_KKProgressToolbarTests.framework */; };
 		A5DD75DA108590F8C317EAF5 /* Pods_KKProgressToolbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEFC65EA4F1FBEAFA9274D5 /* Pods_KKProgressToolbar.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		0297DDE91589D40E38D5E0D2 /* Pods-KKProgressToolbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbar.debug.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbar/Pods-KKProgressToolbar.debug.xcconfig"; sourceTree = "<group>"; };
+		2BB036C78809288DD8481948 /* Pods-KKProgressToolbarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbarTests.release.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbarTests/Pods-KKProgressToolbarTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FC67A214BF9A25968719CA6 /* Pods-KKProgressToolbarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbarTests.debug.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbarTests/Pods-KKProgressToolbarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		532E78BC24F4A822000D92FC /* KKProgressToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKProgressToolbar.h; sourceTree = "<group>"; };
 		535D10AF24F4A21400E3006D /* KKProgressToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKProgressToolbar.swift; sourceTree = "<group>"; };
 		535D10B024F4A21400E3006D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		537EDD1224F49F1E003DC54A /* ProgressToolbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressToolbarTests.swift; sourceTree = "<group>"; };
 		537EDD1424F49F1E003DC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E86D88301B9FEF3E7755BCE /* Pods-KKProgressToolbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKProgressToolbar.release.xcconfig"; path = "Target Support Files/Pods-KKProgressToolbar/Pods-KKProgressToolbar.release.xcconfig"; sourceTree = "<group>"; };
+		74AD6D90EE707F5C317D4AFD /* Pods_KKProgressToolbarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKProgressToolbarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEFC65EA4F1FBEAFA9274D5 /* Pods_KKProgressToolbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKProgressToolbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				537EDD0E24F49F1E003DC54A /* KKProgressToolbar.framework in Frameworks */,
+				70333108EEBF2A9CAC44F870 /* Pods_KKProgressToolbarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 			children = (
 				0297DDE91589D40E38D5E0D2 /* Pods-KKProgressToolbar.debug.xcconfig */,
 				5E86D88301B9FEF3E7755BCE /* Pods-KKProgressToolbar.release.xcconfig */,
+				4FC67A214BF9A25968719CA6 /* Pods-KKProgressToolbarTests.debug.xcconfig */,
+				2BB036C78809288DD8481948 /* Pods-KKProgressToolbarTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -70,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				9CEFC65EA4F1FBEAFA9274D5 /* Pods_KKProgressToolbar.framework */,
+				74AD6D90EE707F5C317D4AFD /* Pods_KKProgressToolbarTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 537EDD1B24F49F1E003DC54A /* Build configuration list for PBXNativeTarget "KKProgressToolbarTests" */;
 			buildPhases = (
+				7D936F1354D599D8DF67EB6C /* [CP] Check Pods Manifest.lock */,
 				537EDD0924F49F1E003DC54A /* Sources */,
 				537EDD0A24F49F1E003DC54A /* Frameworks */,
 				537EDD0B24F49F1E003DC54A /* Resources */,
+				86C6AE896F6ED3BA6FA0713F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +229,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7D936F1354D599D8DF67EB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKProgressToolbarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C6AE896F6ED3BA6FA0713F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarTests/Pods-KKProgressToolbarTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarTests/Pods-KKProgressToolbarTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KKProgressToolbarTests/Pods-KKProgressToolbarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D53E66ACB6C89B73905508B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,10 +494,11 @@
 		};
 		537EDD1C24F49F1E003DC54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC67A214BF9A25968719CA6 /* Pods-KKProgressToolbarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProgressToolbarTests/Info.plist;
+				INFOPLIST_FILE = KKProgressToolbarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,10 +513,11 @@
 		};
 		537EDD1D24F49F1E003DC54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB036C78809288DD8481948 /* Pods-KKProgressToolbarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProgressToolbarTests/Info.plist;
+				INFOPLIST_FILE = KKProgressToolbarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

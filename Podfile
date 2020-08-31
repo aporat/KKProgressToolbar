@@ -7,3 +7,8 @@ target 'KKProgressToolbar' do
   pod 'GTProgressBar'
   pod 'SnapKit'
 end
+
+target 'KKProgressToolbarTests' do
+  pod 'GTProgressBar'
+  pod 'SnapKit'
+end
