@@ -14,13 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: swift build -v
-    - name: Run macOS tests
-      run: swift test -v
+      run: pod install
     - name: Run iOS tests
       run: xcodebuild test  -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar -destination platform="iOS Simulator,name=iPhone 11 Pro"
     - uses: actions/upload-artifact@v2
-      if: ${{ failure() }}
-      with:
-        name: FailedRenderTests
-        path: FailedRenderTests
