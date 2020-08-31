@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ProgressToolbar
+@testable import KKProgressToolbar
 
 class ProgressToolbarTests: XCTestCase {
 
