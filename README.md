@@ -2,7 +2,7 @@
 
 KKProgressToolbar is an iOS toolbar library
 
-[![Build Status](https://travis-ci.org/aporat/KKProgressToolbar.svg?branch=master)](https://travis-ci.org/aporat/KKProgressToolbar)
+[![Build Status](https://github.com/aporat/KKProgressToolbar/workflows/Tests/badge.svg)](https://github.com/aporat/KKProgressToolbar/actions)
 [![Cocoapods](https://img.shields.io/cocoapods/v/KKProgressToolbar.svg)](https://cocoapods.org/pods/SwifterSwift)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-11.4-blue.svg)](https://developer.apple.com/xcode)
