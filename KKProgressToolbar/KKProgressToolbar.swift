@@ -9,8 +9,8 @@ public protocol KKProgressToolbarDelegate: class {
 public final class KKProgressToolbar: UIView {
     
     fileprivate var didSetupConstraints = false
-    
-    // MARK: - Data
+    fileprivate let orientationDidChange = UIDevice.orientationDidChangeNotification
+
     weak public var actionDelegate: KKProgressToolbarDelegate?
     public var isShown = false
     
@@ -75,6 +75,10 @@ public final class KKProgressToolbar: UIView {
         setupSubviews()
     }
     
+    deinit {
+      NotificationCenter.default.removeObserver(self)
+    }
+  
     override public func updateConstraints() {
         super.updateConstraints()
         
@@ -108,12 +112,25 @@ public final class KKProgressToolbar: UIView {
     }
     
     fileprivate func setupSubviews() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setupPosition), name: orientationDidChange, object: nil)
+
         addSubview(mainBackgroundView)
         addSubview(stopButton)
         addSubview(titleLabel)
         addSubview(progressBar)
         
         setNeedsUpdateConstraints()
+    }
+  
+    @objc fileprivate func setupPosition() {
+        if self.isShown {
+            self.hide(false) {
+                self.isHidden = false
+                self.show(false)
+            }
+        } else {
+            self.setNeedsLayout()
+        }
     }
     
     public func show(_ animated: Bool, completion: (() -> Void)? = nil) {
