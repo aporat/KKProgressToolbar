@@ -20,5 +20,6 @@ jobs:
     steps:
       - uses: mxcl/xcodebuild@v3
         with:
+          scheme: KKProgressToolbar
           platform-version: ${{ matrix.platform-version }}
           platform: ${{ matrix.platform }}
