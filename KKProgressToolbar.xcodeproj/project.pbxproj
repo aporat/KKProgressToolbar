@@ -34,6 +34,7 @@
 		537EDD0D24F49F1E003DC54A /* KKProgressToolbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKProgressToolbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		537EDD1224F49F1E003DC54A /* ProgressToolbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressToolbarTests.swift; sourceTree = "<group>"; };
 		537EDD1424F49F1E003DC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A456B42D58002A00909759 /* KKProgressToolbar.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = KKProgressToolbar.xctestplan; path = ../KKProgressToolbar.xctestplan; sourceTree = "<group>"; };
 		77EAA5C72D22198200A60EB2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +73,7 @@
 		537EDCFA24F49F1E003DC54A = {
 			isa = PBXGroup;
 			children = (
+				77A456B42D58002A00909759 /* KKProgressToolbar.xctestplan */,
 				77EAA5C72D22198200A60EB2 /* Package.swift */,
 				535D10AE24F4A21400E3006D /* KKProgressToolbar */,
 				537EDD1124F49F1E003DC54A /* KKProgressToolbarTests */,
