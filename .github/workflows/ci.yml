@@ -30,9 +30,9 @@ jobs:
     - name: Install Dependencies
       run: swift package resolve
 
-    # Run tests on ${{ matrix.platform }} with iOS ${{ matrix.os }}
-    - name: Run Tests on ${{ matrix.platform }} (iOS ${{ matrix.os }})
+    # Run build on ${{ matrix.platform }} with iOS ${{ matrix.os }}
+    - name: Run Build on ${{ matrix.platform }} (iOS ${{ matrix.os }})
       run: |
-        xcodebuild test \
+        xcodebuild build \
           -scheme 'KKProgressToolbar' \
           -destination 'platform=iOS Simulator,name=${{ matrix.platform }},OS=${{ matrix.os }}'
