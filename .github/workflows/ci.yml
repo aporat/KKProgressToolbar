@@ -1,19 +1,38 @@
-name: Tests
+name: Swift
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master" ]
 
 jobs:
   build:
-
+    name: Swift ${{ matrix.platform }} on ${{ matrix.os }}
     runs-on: macos-latest
 
+    strategy:
+      matrix:
+        platform:
+          - platform=iPhone 16 Pro Max
+          - platform=iPhone 16 Pro
+        os: 
+          - 17.4
+          - 18.2
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: pod install
-    - name: Run iOS tests
-      run: xcodebuild test  -workspace KKProgressToolbar.xcworkspace -scheme KKProgressToolbar -destination platform="iOS Simulator,name=iPhone 11 Pro"
+    
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Install any dependencies
+    - name: Install Dependencies
+      run: swift package resolve
+
+    # Run tests on ${{ matrix.platform }} with iOS ${{ matrix.os }}
+    - name: Run Tests on ${{ matrix.platform }} (iOS ${{ matrix.os }})
+      run: |
+        xcodebuild test \
+          -scheme 'KKProgressToolbar' \
+          -destination 'platform=iOS Simulator,name=${{ matrix.platform }},OS=${{ matrix.os }}'
