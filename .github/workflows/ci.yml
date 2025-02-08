@@ -8,18 +8,31 @@ on:
 
 jobs:
   build:
+    name: Swift ${{ matrix.platform }} on ${{ matrix.os }}
+    runs-on: macos-latest
+
     strategy:
       matrix:
         platform:
-          - iOS
-        platform-version:
-          - ^15
-          - ^16
-          - ^17
-    runs-on: macos-latest
+          - platform=iPhone 16 Pro Max
+          - platform=iPhone 16 Pro
+        os: 
+          - 17.4
+          - 18.2
+
     steps:
-      - uses: mxcl/xcodebuild@v3
-        with:
-          scheme: KKProgressToolbar
-          platform-version: ${{ matrix.platform-version }}
-          platform: ${{ matrix.platform }}
+    
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Install any dependencies
+    - name: Install Dependencies
+      run: swift package resolve
+
+    # Run tests on ${{ matrix.platform }} with iOS ${{ matrix.os }}
+    - name: Run Tests on ${{ matrix.platform }} (iOS ${{ matrix.os }})
+      run: |
+        xcodebuild test \
+          -scheme 'KKProgressToolbar' \
+          -destination 'platform=iOS Simulator,name=${{ matrix.platform }},OS=${{ matrix.os }}'
