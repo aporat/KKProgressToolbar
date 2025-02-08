@@ -1,11 +1,3 @@
-//
-//  ProgressToolbarTests.swift
-//  ProgressToolbarTests
-//
-//  Created by Adar Porat on 8/24/20.
-//  Copyright © 2020 Adar Porat. All rights reserved.
-//
-
 @testable import KKProgressToolbar
 import XCTest
 

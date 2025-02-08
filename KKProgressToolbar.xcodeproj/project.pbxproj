@@ -419,6 +419,7 @@
 		537EDD1C24F49F1E003DC54A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KKProgressToolbarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -437,6 +438,7 @@
 		537EDD1D24F49F1E003DC54A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KKProgressToolbarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
