@@ -1,6 +1,0 @@
-use_frameworks!
-
-target 'KKProgressToolbarExample' do
-  platform :ios, '12.0'
-  pod 'KKProgressToolbar', :path => '../'
-end

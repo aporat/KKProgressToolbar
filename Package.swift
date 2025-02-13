@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "KKProgressToolbar",
+    name: "APProgressToolbar",
     platforms: [
         .iOS(.v15),
         .tvOS(.v13),
@@ -12,8 +12,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "KKProgressToolbar",
-            targets: ["KKProgressToolbar"]
+            name: "APProgressToolbar",
+            targets: ["APProgressToolbar"]
         ),
     ],
     dependencies: [
@@ -23,13 +23,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "KKProgressToolbar",
+            name: "APProgressToolbar",
             dependencies: ["GTProgressBar", "SnapKit"],
-            path: "KKProgressToolbar"
+            path: "APProgressToolbar"
         ),
         .testTarget(
-            name: "KKProgressToolbarTests",
-            dependencies: ["KKProgressToolbar"]
+            name: "APProgressToolbarTests",
+            dependencies: ["APProgressToolbar"]
         )
     ]
 )

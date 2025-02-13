@@ -1,4 +1,4 @@
-@testable import KKProgressToolbar
+@testable import APProgressToolbar
 import XCTest
 
 class ProgressToolbarTests: XCTestCase {

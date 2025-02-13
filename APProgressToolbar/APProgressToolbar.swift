@@ -2,15 +2,15 @@ import GTProgressBar
 import SnapKit
 import UIKit
 
-public protocol KKProgressToolbarDelegate: AnyObject {
-    func didCancelButtonPressed(_ toolbar: KKProgressToolbar)
+public protocol APProgressToolbarDelegate: AnyObject {
+    func didCancelButtonPressed(_ toolbar: APProgressToolbar)
 }
 
-public final class KKProgressToolbar: UIView {
+public final class APProgressToolbar: UIView {
     fileprivate var didSetupConstraints = false
     fileprivate let orientationDidChange = UIDevice.orientationDidChangeNotification
 
-    public weak var actionDelegate: KKProgressToolbarDelegate?
+    public weak var actionDelegate: APProgressToolbarDelegate?
     public var isShown = false
 
     public var text: String? {
