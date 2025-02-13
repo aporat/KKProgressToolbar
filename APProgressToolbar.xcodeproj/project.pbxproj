@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -167,6 +167,7 @@
 				};
 			};
 			buildConfigurationList = 537EDCFE24F49F1E003DC54A /* Build configuration list for PBXProject "APProgressToolbar" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,7 +179,6 @@
 				7747C81F2D22161700803000 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				77EAA5C82D221AD900A60EB2 /* XCRemoteSwiftPackageReference "GTProgressBar" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 537EDD0524F49F1E003DC54A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
