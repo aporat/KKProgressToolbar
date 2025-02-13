@@ -34,5 +34,5 @@ jobs:
     - name: Run Build on ${{ matrix.platform }} (iOS ${{ matrix.os }})
       run: |
         xcodebuild build \
-          -scheme 'KKProgressToolbar' \
+          -scheme 'APProgressToolbar' \
           -destination 'platform=iOS Simulator,name=${{ matrix.platform }},OS=${{ matrix.os }}'
