@@ -17,7 +17,7 @@ jobs:
       matrix:
         include:
           - platform: iPhone 16 Pro
-            os: 18.0
+            os: 18.1
           - platform: iPhone 16 Pro
             os: 18.2
     steps:
