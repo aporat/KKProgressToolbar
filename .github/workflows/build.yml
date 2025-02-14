@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - platform: iPhone 18 Pro
+          - platform: iPhone 16 Pro
             os: 18.0
           - platform: iPhone 16 Pro
             os: 18.2
